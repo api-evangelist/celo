@@ -1,8 +1,16 @@
 aid: celo
 name: Celo
-description: Celo is a company surfaced as a portfolio company of a16z, general-catalyst, version-one-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Celo is a leading Ethereum Layer 2 (L2) blockchain built for real-world
+  usage, mobile-first payments, and stablecoins, run by cLabs and the Celo
+  Foundation. It offers a fully EVM- and Ethereum-JSON-RPC-compatible network
+  reachable through the public Forno RPC endpoints, gas-fee abstraction that lets
+  users pay fees in stablecoins, and a developer stack spanning TypeScript SDKs
+  (ContractKit, @celo/connect, @celo/abis, @celo/identity), the Celo Composer
+  CLI scaffolding tool, a published Model Context Protocol (MCP) server for AI
+  agents, and agent-payment protocols (x402, MPP, ERC-8004). Developers build
+  dApps, MiniPay mini-apps, DeFi, and AI agents against the Celo Mainnet
+  (chain 42220) and the Celo Sepolia testnet.
 url: https://raw.githubusercontent.com/api-evangelist/celo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,17 +20,102 @@ x-backed-by:
 - version-one-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://framerusercontent.com/assets/vn0V92oZLFWJWDd5ypiVsqJilg.png
 tags:
 - Company
-apis: []
+- Blockchain
+- Ethereum L2
+- Web3
+- Stablecoins
+- Payments
+- JSON-RPC
+- Smart Contracts
+- AI Agents
+- Developer Tools
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Celo JSON-RPC API
+  description: >-
+    Ethereum-compatible JSON-RPC API for the Celo Layer 2 network, served over
+    the public Forno endpoints. Supports the standard eth_* / net_* / web3_*
+    method set for reading chain state, submitting transactions, calling smart
+    contracts, and querying balances, plus Celo fee-abstraction extensions.
+  humanURL: https://docs.celo.org/build-on-celo/network-overview
+  baseURL: https://forno.celo.org
+  properties:
+  - type: Documentation
+    url: https://docs.celo.org/build-on-celo/network-overview
+  - type: MCPServer
+    url: mcp/celo-mcp.yml
 common:
 - type: Website
   url: https://celo.org
+- type: DeveloperPortal
+  url: https://docs.celo.org
+- type: Documentation
+  url: https://docs.celo.org
+- type: APIReference
+  url: https://docs.celo.org/build-on-celo/network-overview
+- type: GettingStarted
+  url: https://docs.celo.org/build-on-celo/quickstart
+- type: Blog
+  url: https://blog.celo.org
+- type: Support
+  url: https://forum.celo.org
+- type: GitHubOrganization
+  url: https://github.com/celo-org
+- type: TermsOfService
+  url: https://celo.org/terms-of-use
+- type: PrivacyPolicy
+  url: https://celo.org/privacy-policy
+- type: StatusPage
+  url: https://status.celo.org
+- type: Packages
+  url: packages/celo-packages.yml
+- type: SDKs
+  url: packages/celo-packages.yml
+- type: CLI
+  url: cli/celo-cli.yml
+- type: MCPServer
+  url: mcp/celo-mcp.yml
+- type: LLMsTxt
+  url: llms/celo-llms.txt
+- type: WellKnown
+  url: well-known/celo-well-known.yml
+- type: SecurityTxt
+  url: well-known/celo-security.txt
+- type: DomainSecurity
+  url: security/celo-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/celo-vulnerability-disclosure.yml
+- type: Security
+  url: https://celo.org/.well-known/security.txt
+- type: Lifecycle
+  url: lifecycle/celo-lifecycle.yml
+- type: Deprecation
+  url: lifecycle/celo-lifecycle.yml
+- type: Conformance
+  url: conformance/celo-conformance.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

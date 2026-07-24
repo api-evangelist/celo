@@ -1,0 +1,27 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.celo.org + https://status.celo.org
+versioning:
+  scheme: network-upgrade
+  model: >-
+    Celo is an Ethereum L2; protocol evolution ships as coordinated network
+    hardforks/upgrades governed through Celo Improvement Proposals (CIPs) and
+    on-chain governance. Client, ContractKit/CeloCLI, and smart-contract release
+    processes are documented per component.
+  current: Celo L2 (Mainnet chain 42220)
+  docs: https://docs.celo.org/contribute-to-celo/release-process
+deprecation:
+  policy_url: https://docs.celo.org/contribute-to-celo/release-process
+  notes: >-
+    The Alfajores developer testnet is being deprecated (planned September 2025)
+    and replaced by the Celo Sepolia testnet (chain 11142220). Legacy
+    Attestation Service and older SDK components have documented release/EOL
+    processes.
+  sunset_header: false
+status_page: https://status.celo.org
+governance:
+  proposals: https://docs.celo.org/contribute-to-celo/contributors/cip-contributors
+  cip_repo: https://github.com/celo-org/celo-proposals
+deprecated_networks:
+- name: Alfajores
+  replaced_by: Celo Sepolia (chain 11142220)

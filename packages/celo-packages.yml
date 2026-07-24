@@ -1,0 +1,53 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/celo + https://docs.celo.org
+packages:
+- language: javascript
+  registry: npm
+  name: "@celo/contractkit"
+  url: https://www.npmjs.com/package/@celo/contractkit
+  install: npm install @celo/contractkit
+  description: TypeScript SDK for interacting with the Celo network and core contracts.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@celo/connect"
+  url: https://www.npmjs.com/package/@celo/connect
+  install: npm install @celo/connect
+  description: Lower-level connection and transaction primitives used by ContractKit.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@celo/abis"
+  url: https://www.npmjs.com/package/@celo/abis
+  install: npm install @celo/abis
+  description: ABIs for the Celo core smart contracts.
+  official: true
+- language: javascript
+  registry: npm
+  name: "@celo/identity"
+  url: https://www.npmjs.com/package/@celo/identity
+  install: npm install @celo/identity
+  description: Utilities for Celo's identity / attestation protocol (ODIS, phone-number privacy).
+  official: true
+- language: javascript
+  registry: npm
+  name: "@celo/celo-composer"
+  url: https://www.npmjs.com/package/@celo/celo-composer
+  install: npx @celo/celo-composer@latest create
+  description: CLI that scaffolds Celo dApp starter kits (Next.js, Hardhat/Foundry, MiniPay, Farcaster, AI-chat templates).
+  official: true
+- language: javascript
+  registry: npm
+  name: "@celo/celocli"
+  url: https://www.npmjs.com/package/@celo/celocli
+  install: npm install -g @celo/celocli
+  description: Command-line interface for the Celo protocol and core contracts (binary for cli/celo-cli.yml).
+  official: true
+- language: python
+  registry: pypi
+  name: celo-mcp
+  url: https://pypi.org/project/celo-mcp/
+  install: pipx install celo-mcp
+  description: Model Context Protocol server exposing Celo blockchain data and operations to AI agents. Published in the Celo docs as the Celo MCP Server (repo celo-org/celo-mcp).
+  official: true

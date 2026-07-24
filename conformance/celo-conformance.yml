@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.celo.org/build-on-celo/network-overview + docs.celo.org/build-with-ai
+standards:
+- id: ethereum-json-rpc
+  conforms: true
+  evidence: >-
+    Forno RPC endpoints serve the standard Ethereum JSON-RPC method set
+    (eth_*, net_*, web3_*); Celo is a fully EVM-compatible Ethereum L2.
+- id: evm-compatibility
+  conforms: true
+  evidence: EVM-equivalent execution layer (op-geth / OP Stack based L2).
+- id: op-stack
+  conforms: true
+  evidence: Celo L2 is built on the Optimism OP Stack (op-geth, op-node forks).
+- id: erc-20
+  conforms: true
+  evidence: CELO and Mento stablecoins (cUSD, cEUR, cREAL) exposed as ERC-20 tokens.
+- id: erc-8004-agent-trust
+  conforms: true
+  evidence: docs.celo.org/build-on-celo/build-with-ai/8004 documents ERC-8004 Agent Trust Protocol support.
+- id: x402-agent-payments
+  conforms: true
+  evidence: docs.celo.org/build-on-celo/build-with-ai/x402 documents x402 agent-payments support.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: JSON-RPC uses the JSON-RPC 2.0 error envelope, not RFC 9457 problem+json.
+- id: oauth2
+  conforms: false
+  evidence: Public JSON-RPC endpoints are unauthenticated; no OAuth2 surface.

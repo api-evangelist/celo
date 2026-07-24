@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.celo.org/build-on-celo/quickstart
+clis:
+- name: Celo Composer
+  package: "@celo/celo-composer"
+  registry: npm
+  url: https://www.npmjs.com/package/@celo/celo-composer
+  repo: https://github.com/celo-org/celo-composer
+  official: true
+  description: >-
+    CLI that generates customizable Celo dApp starter kits with a modern
+    monorepo architecture (Turborepo + PNPM workspaces).
+  install:
+  - "npx @celo/celo-composer@latest create"
+  primary_command: "npx @celo/celo-composer@latest create"
+  templates:
+  - basic
+  - farcaster-miniapp
+  - minipay
+  - ai-chat
+  options:
+    wallet_providers: [RainbowKit, Thirdweb]
+    contract_frameworks: [Hardhat, Foundry]
+  stack: [Next.js 14+ App Router, TypeScript, Tailwind CSS, shadcn/ui]
+- name: Celo CLI
+  package: "@celo/celocli"
+  registry: npm
+  url: https://www.npmjs.com/package/@celo/celocli
+  official: true
+  description: >-
+    Command-line interface for interacting with the Celo protocol and core
+    contracts (accounts, transfers, governance, validators). Release process
+    documented alongside ContractKit.
+  install:
+  - "npm install -g @celo/celocli"
+  primary_command: celocli
