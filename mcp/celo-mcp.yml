@@ -10,13 +10,11 @@ server:
   package: https://pypi.org/project/celo-mcp/
   install:
   - pipx install celo-mcp
-  - "git clone https://github.com/celo-org/celo-mcp && cd celo-mcp && pip install -e ."
+  - git clone https://github.com/celo-org/celo-mcp && cd celo-mcp && pip install -e .
   requirements: Python 3.11+, Git 2.38+
-  description: >-
-    Model Context Protocol server providing AI assistants and IDEs comprehensive
-    access to the Celo blockchain: blockchain data, token operations, NFTs, smart
-    contracts, transactions, and governance. Published as the official Celo MCP
-    Server in the Celo docs.
+  description: 'Model Context Protocol server providing AI assistants and IDEs comprehensive access to
+    the Celo blockchain: blockchain data, token operations, NFTs, smart contracts, transactions, and governance.
+    Published as the official Celo MCP Server in the Celo docs.'
 tools:
 - name: get_network_status
   description: Get current Celo network status.
@@ -51,3 +49,9 @@ tools:
 - name: get_proposal_details
   description: Get details for a governance proposal.
 notes: 25+ tools total; the above are the documented representative set.
+deployment:
+  mode: local-stdio
+  verified: searched
+  tools: 16
+  checked: '2026-08-12'
+  source: catalog MCP census
