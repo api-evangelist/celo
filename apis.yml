@@ -77,6 +77,10 @@ apis:
   - type: MCPServer
     url: mcp/celo-mcp.yml
 common:
+- type: Whitepaper
+  url: https://celo.org/papers
+- type: Sandbox
+  url: sandbox/celo-sandbox.yml
 - type: Website
   url: https://celo.org
 - type: DeveloperPortal
