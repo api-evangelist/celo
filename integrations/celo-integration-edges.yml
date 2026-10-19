@@ -1,0 +1,94 @@
+edges:
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@celo/abis
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@celo/abis'
+      version: 17.0.4
+      released: '2026-06-17'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@celo/abis
+      repo_leg: github-org:celo-org
+      publisher_leg: org:celo
+      matched_by: github-org
+    - name: '@celo/celo-composer'
+      version: 2.4.14
+      released: '2026-09-29'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@celo/celo-composer
+      repo_leg: github-org:celo-org
+      publisher_leg: org:celo
+      matched_by: github-org
+    - name: '@celo/celocli'
+      version: 9.0.1
+      released: '2026-06-16'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@celo/celocli
+      repo_leg: domain:celo.org
+      publisher_leg: org:celo
+      matched_by: domain
+    - name: '@celo/connect'
+      version: 8.0.0
+      released: '2026-06-15'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@celo/connect
+      repo_leg: domain:celo.org
+      publisher_leg: org:celo
+      matched_by: domain
+    - name: '@celo/contractkit'
+      version: 11.0.0
+      released: '2026-06-15'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@celo/contractkit
+      repo_leg: domain:celo.org
+      publisher_leg: org:celo
+      matched_by: domain
+    - name: '@celo/identity'
+      version: 5.1.2
+      released: '2026-10-07'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@celo/identity
+      repo_leg: github-org:celo-org
+      publisher_leg: org:celo
+      matched_by: github-org
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
+generated: '2026-10-18'
+method: searched
+source:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
+checked:
+- https://api.nuget.org/v3
+- https://crates.io/api/v1
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
