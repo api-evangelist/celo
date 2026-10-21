@@ -178,6 +178,33 @@ edges:
     detected: '2026-10-20'
   detected_by: sweep-agent-skills.py
   first_seen: '2026-10-20'
+- partner_name: x402 facilitators directory
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://docs.x402.org/dev-tools/facilitators
+  category: x402 payment facilitator
+  contract_reference:
+    register: x402 facilitators directory (docs.x402.org/dev-tools/facilitators)
+    standard: x402
+    spec_file: null
+    role: x402-facilitator
+    registered_name: Celo Facilitator
+    register_id: https://x402.celo.org
+    matched_domain: celo.org
+    matched_by: domain
+    listing_description: 'Gasless x402 facilitator for Celo Mainnet (API: `https://api.x402.celo.org`) and Celo
+      Sepolia (API: `https://api.x402.sepolia.celo.org`), accepting USDC, USD₮ and USA₮ via EIP-3009 and wARS, wBRL
+      and wCOP via Permit2'
+    signal_note: 'participation only: a selected production facilitator in the protocol''s own docs; listing is
+      not conformance'
+    detected_by: sweep-x402-micropayments.py
+    detected: '2026-10-21'
+  detected_by: sweep-x402-micropayments.py
+  first_seen: '2026-10-21'
 generated: '2026-10-18'
 method: searched
 source:
@@ -207,3 +234,13 @@ checked:
 - https://officialskills.sh/sitemap.xml
 - https://skillsmp.com/sitemap.xml
 - https://www.skills.sh/sitemap.xml
+- https://agentic.market
+- https://api.cdp.coinbase.com/platform/v2/x402/discovery/resources
+- https://app.ampersend.ai/discover
+- https://docs.cdp.coinbase.com/x402/
+- https://docs.x402.org/dev-tools/facilitators
+- https://pay.sh
+- https://www.x402.org/ecosystem
+- https://x402-list.com
+- https://x402.org/members/
+- https://x402scan.com
